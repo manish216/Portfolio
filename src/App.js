@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav';
+import Main from './components/main';
+
+
+class App extends Component {
+render() {
+  return(
+    <div>
+    <Navbar bg="light" expand="lg">
+      <Navbar.Brand href="/">Portfolio</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="ml-auto">
+          <Nav.Link href="/home">HOME</Nav.Link>
+          <Nav.Link href="/experience">EXPERIENCE</Nav.Link>
+          <Nav.Link href="/projects">PROJECTS</Nav.Link>
+          <Nav.Link href="/education">EDUCATION</Nav.Link>
+          <Nav.Link href="/skills">SKILLS</Nav.Link>
+          <Nav.Link href="/Resume">RESUME</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
+      <Main />
     </div>
   );
+}
 }
 
 export default App;
