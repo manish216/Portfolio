@@ -10,7 +10,7 @@ footer{
   position: fixed;
   bottom: 0;
   align-items: center;
-  text-align: center;
+  text-align: center !important;
   font-size: small;
   color:#fff;
   background-color:transparent !important;
