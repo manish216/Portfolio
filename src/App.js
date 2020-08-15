@@ -17,13 +17,13 @@ render() {
       {/* <Navbar.Brand as={NavLink} to="/home" href="/home">Portfolio</Navbar.Brand> */}
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="m-auto" activeKey="/home" >
-          <Nav.Link as={NavLink} to ="/home" href="/home">HOME</Nav.Link>
-            <Nav.Link as={NavLink} to="/experience" href="/experience">EXPERIENCE</Nav.Link>
-            <Nav.Link as={NavLink} to="/projects" href="/projects">PROJECTS</Nav.Link>
-            <Nav.Link as={NavLink} to="/education" href="/education">EDUCATION</Nav.Link>
-            <Nav.Link as={NavLink} to="/skills" href="/skills">SKILLS</Nav.Link>
-            <Nav.Link as={NavLink} to="/Resume" href="/Resume">RESUME</Nav.Link>
+          <Nav className="m-auto" activeKey="/Portfolio/home" >
+            <Nav.Link as={NavLink} to="/Portfolio/home" href="/home">HOME</Nav.Link>
+            <Nav.Link as={NavLink} to="/Portfolio/experience" href="/experience">EXPERIENCE</Nav.Link>
+            <Nav.Link as={NavLink} to="/Portfolio/projects" href="/projects">PROJECTS</Nav.Link>
+            <Nav.Link as={NavLink} to="/Portfolio/education" href="/education">EDUCATION</Nav.Link>
+            <Nav.Link as={NavLink} to="/Portfolio/skills" href="/skills">SKILLS</Nav.Link>
+            <Nav.Link as={NavLink} to="/Portfolio/Resume" href="/Resume">RESUME</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
