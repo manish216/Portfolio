@@ -1,0 +1,20 @@
+/* .footer-style {
+  background-color: transparent !important;
+  color: #fff;
+  font-size: 1.5em;
+  border: 2px solid #101018f8;
+  border-top-left-radius: 3px;
+} */
+
+footer{
+  position: fixed;
+  bottom: 0;
+  align-items: center;
+  text-align: center;
+  font-size: small;
+  color:#fff;
+  background-color:transparent !important;
+  display:flex;
+  width: 100vw;
+  height: 2rem;
+}

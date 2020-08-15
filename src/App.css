@@ -1,38 +1,32 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+.logo {
+  width: 25%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar,
+.navbar-default {
+    background-image: none !important; /* override background image gradient w/ flat color */
+    /* font-family: 'Philosopher', sans-serif; */
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 15px !important;
+    max-height: 40px !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* .nav-theme {
+  background-color: transparent !important ;
+  border-color: transparent !important;
+  font-size: 15px !important;
+  max-height: 40px !important;
+} */
+
+.animate-navbar {
+  /* box-shadow: 1px 1px 1px #222; */
+  animation: moveDown 0.5s ease-in-out;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
