@@ -48,6 +48,8 @@ const MyTitleMessage = styled.h1`
 
 
 
+
+
 const TitleMessage = () => {
   // const [toggle, set] = useState(true)
   // const trail = useTrail(items.length, {
@@ -78,8 +80,7 @@ const TitleMessage = () => {
     ref.current = []
     set([])
     ref.current.push(setTimeout(() => set(['Hi, I am ', 'Manish Reddy Challamala']), 2000))
-    ref.current.push(setTimeout(() => set(['Hi, I am ', ]), 1000))
-    ref.current.push(setTimeout(() => set(['Hi , I am ', 'Manish Reddy Challamala']), 8000))
+
   }, [])
 
   useEffect(() => void reset(), [])
@@ -91,7 +92,7 @@ const TitleMessage = () => {
         <div className="titleMessage">
             <div>
               {transitions.map(({ item, props: { innerHeight, ...rest }, key }) => (
-                <animated.div className="transitions-item" key={key} style={rest} onClick={reset}>
+                <animated.div className="transitions-item" key={key} style={rest} >
                   <animated.div style={{ overflow: 'hidden', height: innerHeight }}>{item}</animated.div>
                 </animated.div>
               ))}
@@ -129,6 +130,7 @@ const TitleMessage = () => {
                         }}
                     />
                 </div>
+
             </div>
         </div>
     </MyTitleMessage>);

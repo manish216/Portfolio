@@ -1,16 +1,3 @@
-.pageWrapper{
-    /* width: 100%; */
-    /* height: 100vh; */
-    position: fixed;
-    background-color: #fff;
-
-}
-
-.video_carousel{
-    padding-top: 15rem;
-
-}
-
 .Content{
     display: flex;
     position: relative;
@@ -20,18 +7,20 @@
 
 }
 
+.graphics{
+    height: 100%;
+    padding-top: 2rem;
+}
 
-/*
-.pageBackground{
-    width: 120%;
-    height: 120%;
-    left: -10%;
-    top: -10%;
-    position: absolute;
-    background-image: url(../images/background.jpg);
-    background-size: cover;
-    background-position: center;
-    filter: blur(3px);
-} */
+.About_me{
+    position: relative;
+    top:21rem;
+}
+
+.about_content{
+     z-index: 1;
+    margin-top: -34rem;
+    justify-content: center;
+}
 
 

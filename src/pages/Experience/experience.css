@@ -1,0 +1,20 @@
+.HeroStatement_heroStatement__26sgP{
+
+-webkit-font-smoothing: antialiased;
+font-family: Founders Grotesk;
+font-style: normal;
+font-weight: 400;
+color: #1c3447;
+min-width: 290px;
+max-width: 1050px;
+background-image: url(/static/media/intro-background.6024dc8c.png);
+background-repeat: no-repeat;
+animation: HeroStatement_backgroundGradient__37AgU 8s linear infinite alternate;
+-webkit-text-fill-color: transparent;
+font-size: 80px;
+line-height: 100.8%;
+width: 100%;
+padding: 0;
+margin: 0;
+}
+

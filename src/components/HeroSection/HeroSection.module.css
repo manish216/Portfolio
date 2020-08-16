@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+.heroSection{
+    border-style: solid;
+    border-width: 25px;
+    border-color: #fff;
+    background-color: transparent !important;
+    top:-30rem;
+}
+
+.aboutmeHeading{
+    margin-top:-100px;
+    font-size: 80px;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Nunito', sans-serif;
+    font-size: 500;
+    color: #fff;
+}
+
+.paragraph{
+    z-index: -1;
+    float: left;
+    color: whitesmoke;
+    text-align: justify;    float: left;
+    padding: 50px;
+    border: 1px #fff solid;
+
+}
+
+.svgParallax{
+    float: right;
+    width: 230px;
+    padding-right: 0px;
+    padding-top: 5rem;
+}
