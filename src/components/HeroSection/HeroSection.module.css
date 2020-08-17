@@ -34,3 +34,54 @@
     padding-right: 0px;
     padding-top: 5rem;
 }
+
+
+.video {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    right: 0%;
+    margin-top:-8rem;
+    /* border: #fff 1px solid; */
+}
+
+.body{
+    background-color: transparent !important;
+    position: relative;
+    /* border: #fff 1px solid; */
+
+}
+
+.universityName{
+    font-size:15px;
+    text-align: center justify;
+}
+
+.masters{
+    position: relative;
+    margin-top: 1rem;
+}
+
+.bachelors{
+    position: absolute;
+    bottom: 5rem;
+}
+
+
+.ub,.au {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  margin: 2rem 6rem;
+}
+.ub {
+  background-image: url(../../assests/icons/University_at_Buffalo_seal.svg);
+  filter: invert(100%) sepia(0%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+
+}
+
+.au {
+  background-image: url(../../assests/icons/1200px-Anna_University_Logo.svg);
+    filter: invert(100%) sepia(0%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}

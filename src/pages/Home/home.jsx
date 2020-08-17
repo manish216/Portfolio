@@ -10,7 +10,7 @@ import profilePictureImage from '../../assests/img/profile/linkedin-photo.jfif';
 import styles from  './home.module.css';
 import ProfilePicture from "../../components/profilePicture/profilePicture.component";
 import HeroSection from '../../components/HeroSection/HeroSection.components';
-
+import Fade from 'react-reveal/Fade';
 
 
 import aboutMeVideo from '../../assests/video/aboutMeVideo.webm';
@@ -28,6 +28,7 @@ class Home extends Component {
                 <div>
                     <MyCarousal />
                     <div className={styles.Content}>
+
                         <ExampleComponent
                             image={profilePictureImage}
                             roundedColor="#FFF"
@@ -35,6 +36,7 @@ class Home extends Component {
                             imageHeight="200"
                             roundedSize="10"
                         />
+
                     </div>
                     <MyTitleMessage />
 
