@@ -1,29 +1,31 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.e443b909.chunk.css",
-    "main.js": "/Portfolio/static/js/main.3283470d.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.3283470d.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.25cad44f.chunk.css",
+    "main.js": "/Portfolio/static/js/main.51c33a77.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.51c33a77.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.e440ee5a.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.e440ee5a.js.map",
     "static/css/2.af3c1da9.chunk.css": "/Portfolio/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.b08e60f0.chunk.js": "/Portfolio/static/js/2.b08e60f0.chunk.js",
-    "static/js/2.b08e60f0.chunk.js.map": "/Portfolio/static/js/2.b08e60f0.chunk.js.map",
+    "static/js/2.db7374f3.chunk.js": "/Portfolio/static/js/2.db7374f3.chunk.js",
+    "static/js/2.db7374f3.chunk.js.map": "/Portfolio/static/js/2.db7374f3.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.45d1ccb7f553ca8c8c8ca53909f3238e.js": "/Portfolio/precache-manifest.45d1ccb7f553ca8c8c8ca53909f3238e.js",
+    "precache-manifest.64c14c3cf814f696a7d35849b50015a2.js": "/Portfolio/precache-manifest.64c14c3cf814f696a7d35849b50015a2.js",
     "service-worker.js": "/Portfolio/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/Portfolio/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.e443b909.chunk.css.map": "/Portfolio/static/css/main.e443b909.chunk.css.map",
-    "static/js/2.b08e60f0.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.b08e60f0.chunk.js.LICENSE.txt",
+    "static/css/main.25cad44f.chunk.css.map": "/Portfolio/static/css/main.25cad44f.chunk.css.map",
+    "static/js/2.db7374f3.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.db7374f3.chunk.js.LICENSE.txt",
+    "static/media/HeroSection.module.css": "/Portfolio/static/media/University_at_Buffalo_seal.34f012be.svg",
     "static/media/World-1992.mp4": "/Portfolio/static/media/World-1992.3cb2fa2c.mp4",
     "static/media/aboutMeVideo.webm": "/Portfolio/static/media/aboutMeVideo.453af7fa.webm",
+    "static/media/educationVideo.mp4": "/Portfolio/static/media/educationVideo.0476279f.mp4",
     "static/media/linkedin-photo.jfif": "/Portfolio/static/media/linkedin-photo.b4586407.jfif",
     "static/media/slide1.jpg": "/Portfolio/static/media/slide1.4317be93.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.e440ee5a.js",
     "static/css/2.af3c1da9.chunk.css",
-    "static/js/2.b08e60f0.chunk.js",
-    "static/css/main.e443b909.chunk.css",
-    "static/js/main.3283470d.chunk.js"
+    "static/js/2.db7374f3.chunk.js",
+    "static/css/main.25cad44f.chunk.css",
+    "static/js/main.51c33a77.chunk.js"
   ]
 }
