@@ -7,7 +7,7 @@ class Education extends Component {
     render() {
         return(
             <div className ={styles.body}>
-                <h1>Education</h1>
+
                 <HeroSectionEducation />
             </div>
         );

@@ -5,6 +5,8 @@ import styled from "styled-components";
 import { useTrail, animated, useTransition} from 'react-spring';
 import styles from "./titleMessage.module.css";
 
+import Delayed from "../Delayed/delayed";
+
 // for text
 const items = ['HI, I am ', 'Manish Reddy Challamala']
 const config = { mass: 5, tension: 2000, friction: 200 }
@@ -79,7 +81,7 @@ const TitleMessage = () => {
     ref.current.map(clearTimeout)
     ref.current = []
     set([])
-    ref.current.push(setTimeout(() => set(['Hi, I am ', 'Manish Reddy Challamala']), 2000))
+    ref.current.push(setTimeout(() => set(['Hi, I am ', 'Manish Reddy Challamala']), 500))
 
   }, [])
 
@@ -121,14 +123,16 @@ const TitleMessage = () => {
                     </span>
                 </div> */}
                 <div className="sub">
+                  <Delayed waitBeforeShow={600}>
                     <Typewriter
                         options={{
                             strings: ["ML Engineer","Data Scientist", "Data Engineer", "Software Developer"],
                             autoStart: true,
                             loop: true,
-                            delay: 100
+                            delay: 50
                         }}
                     />
+                    </ Delayed>
                 </div>
 
             </div>

@@ -1,13 +1,16 @@
+#projects{
+  background: #13161B
+}
+
 .accordian-main {
   cursor: pointer;
   display: inline-block;
   -webkit-text-decoration: none;
   text-decoration: none;
   font-size: 14px;
-  background-color: rebeccapurple;
+  background-color: #fff;
   border: none;
   border-radius: 4px;
-
   padding: 10px;
   color: #fff;
 }
@@ -18,4 +21,30 @@
 
 .image-style1 {
   width: 3em;
+}
+
+.Timeline{
+  color: #FFF;
+}
+
+
+.vertical-timeline-element-title{
+  color: #fff;
+  justify-items: center;
+}
+
+.sourceCode{
+  padding-top: 10px;
+
+}
+
+
+hr{
+  width:500px;
+  color:red;
+  size:10;
+}
+
+li{
+  text-justify: distribute-all-lines;
 }

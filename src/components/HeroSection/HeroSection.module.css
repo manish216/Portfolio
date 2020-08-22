@@ -22,7 +22,8 @@
     z-index: -1;
     float: left;
     color: whitesmoke;
-    text-align: justify;    float: left;
+    text-align: justify;    
+    float: left;
     padding: 50px;
     border: 1px #fff solid;
 
@@ -41,29 +42,41 @@
     width: 100%;
     position: relative;
     right: 0%;
-    margin-top:-8rem;
+    margin-top:-5rem;
     /* border: #fff 1px solid; */
 }
 
 .body{
     background-color: transparent !important;
     position: relative;
+
     /* border: #fff 1px solid; */
 
+}
+
+.heroSectionEducation{
+    border-style: solid;
+    /* border-width: 25px; */
+    /* border-color: #fff; */
+    background-color: transparent !important;
+    top:30rem;
 }
 
 .universityName{
     font-size:15px;
     text-align: center justify;
+    color: #fff !important;
 }
 
 .masters{
     position: relative;
+
     margin-top: 1rem;
 }
 
 .bachelors{
     position: absolute;
+
     bottom: 5rem;
 }
 

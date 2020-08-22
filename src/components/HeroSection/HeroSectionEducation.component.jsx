@@ -12,7 +12,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 const HeroSection = () => {
 
     return (
-        <div >
+        <div className={styles.heroSectionEducation}>
         <Jumbotron className={styles.body}>
             <Container>
                 <Row>

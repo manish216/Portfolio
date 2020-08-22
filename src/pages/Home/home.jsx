@@ -16,6 +16,11 @@ import Fade from 'react-reveal/Fade';
 import aboutMeVideo from '../../assests/video/aboutMeVideo.webm';
 
 
+import Delayed from '../../components/Delayed/delayed';
+
+
+
+
 
 
 
@@ -26,25 +31,30 @@ class Home extends Component {
         return (
             <div className={styles.pageBackground}>
                 <div>
-                    <MyCarousal />
+                        <MyCarousal />
                     <div className={styles.Content}>
-
-                        <ExampleComponent
-                            image={profilePictureImage}
-                            roundedColor="#FFF"
-                            imageWidth="200"
-                            imageHeight="200"
-                            roundedSize="10"
-                        />
-
+                        <Delayed waitBeforeShow={1000}>
+                            <ExampleComponent
+                                image={profilePictureImage}
+                                roundedColor="#FFF"
+                                imageWidth="200"
+                                imageHeight="200"
+                                roundedSize="10"
+                            />
+                        </Delayed>
                     </div>
-                    <MyTitleMessage />
-
+                    <Delayed waitBeforeShow={1200}>
+                        <MyTitleMessage />
+                    </ Delayed>
                 </div>
                 <div className={styles.About_me}>
+                    <Delayed waitBeforeShow={5300}>
                     <MyCarousal1 />
+                    </Delayed>
                     <div className={styles.about_content}>
+                        <Delayed waitBeforeShow={5400}>
                         <HeroSection />
+                        </Delayed>
                     </div>
                 </div>
             </div>

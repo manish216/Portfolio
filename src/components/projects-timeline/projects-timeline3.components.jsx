@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Timeline, Events, UrlButton, ImageEvent,  themes, createTheme } from "@merc/react-timeline";
+import { Timeline, Events, UrlButton, ImageEvent, themes, createTheme } from "@merc/react-timeline";
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { Button } from 'react-bootstrap';
@@ -15,7 +15,18 @@ import Card from "react-bootstrap/Card";
 
 // skills
 import L_REACT from "../../assests/img/skills/react.svg";
+import L_R from "../../assests/img/skills/R_logo.webp";
 import L_PYTHON from "../../assests/img/skills/python.svg";
+import L_sqlLite from "../../assests/img/skills/SQLite.png";
+import L_gMap from "../../assests/img/skills/googleMaps.png";
+import L_hadoop from "../../assests/img/skills/hadoop.png";
+import L_Java from "../../assests/img/skills/java.svg";
+import L_Tomcat from "../../assests/img/skills/Tomcat.jpg";
+import L_s3 from "../../assests/img/skills/aws-s3.png";
+import L_ggplot from "../../assests/img/skills/ggplot.png";
+import L_colab from "../../assests/img/skills/colab.png";
+import L_Flask from "../../assests/img/skills/flask.svg";
+import L_shiny from "../../assests/img/skills/shinyhex.jpg";
 import L_Tensorflow from "../../assests/img/skills/Tensorflow_logo.svg";
 import L_Keras from "../../assests/img/skills/Keras_logo.svg";
 import L_jupyterNotebook from "../../assests/img/skills/Jupyter_logo.svg";
@@ -33,7 +44,7 @@ import L_DJANGO from "../../assests/img/skills/django.svg";
 import L_DIGITAL_OCEAN from "../../assests/img/skills/digital-ocean.svg";
 import L_GIT from "../../assests/img/skills/github-api.svg";
 
-import styles from  "./projects-timeline.styles.css";
+import styles from "./projects-timeline.styles.css";
 
 const ColoredLine = ({ color }) => (
     <hr
@@ -45,89 +56,20 @@ const ColoredLine = ({ color }) => (
     />
 );
 
-const TimeLine = () =>{
-    return(
-    <div id="projects">
-        <VerticalTimeline>
-            {/* Project 1 */}
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    contentStyle={{ background: 'transparent', color: '#fff',border:'1px #bfbfbf solid' }}
-                    contentArrowStyle={{ borderRight: '7px solid  #fff' }}
-                    date="Fall 2018"
-                    iconStyle={{ background: '#13161B', color: '#fff'}}
-                    // icon={<WorkIcon />}
-                >
-                    <h4 className="vertical-timeline-element-title">Handwriting comparison using Linear Regression, Logistic Regression and Neural Network.</h4>
-                    <div className="d-flex justify-content-between flex-column mt-1">
-                    <div style={{ background: '#13161B', color: '#FFF' ,paddingTop: '10px'}}>
-                    <Accordion >
-                    <Card>
-                        <Accordion.Toggle as={Card.Header} style={{background:'#13161B'}} eventKey="0" className="p-2 text-center accordian-main">
-                            PROJECT DETAILS
-                        </Accordion.Toggle>
-                        <Accordion.Collapse eventKey="0" className="text-left">
-                            <Card.Body style={{background:'#13161B'}}>
-                                            <strong>Description:</strong> The goal of this project is to find similarities between hand written copies of two different writers by using CEDAR as data source.
-                                <ColoredLine color="#fff" />
-                                <strong>Features:</strong>
-                                    <ul className="list-styles pt-1">
-                                        <li>Human Observed features: Features entered by human document examiners manually</li>
-                                        <li>GSC features: Features extracted using Gradient Structural Concavity (GSC) algorithm.</li>
-                                    </ul>
-                                    <ColoredLine color="#fff" />
-                                <strong>Models:</strong>
-                                    <ul>
-                                        <li>Linear Regression using Stochastic Gradient Descent.</li>
-                                        <li>Logistic Regression using Stochastic Gradient descent.</li>
-                                        <li>Neural networks.</li>
-                                    </ul>
-                                    <ColoredLine color="#fff" />
-                                <strong>Tech used:</strong>
-                                    <ul>
-                                        <li>
-                                            <span className="p-2">
-                                                <Image src={L_PYTHON} alt="Python" rounded className="image-style1 m-1"></Image> Python
-                                            </span>
-                                        </li>
-                                        <li>
-                                            <span className="p-2">
-                                                <Image src={L_Tensorflow} alt="TensorFlow" rounded className="image-style1 m-1"></Image> TensorFlow
-                                            </span>
-                                        </li>
-                                        <li>
-                                            <span className="p-2">
-                                                <Image src={L_Keras} alt="Keras" rounded className="image-style1 m-1"></Image> Keras
-                                            </span>
-                                        </li>
-                                        <li>
-                                            <span className="p-2">
-                                                <Image src={L_jupyterNotebook} alt="Jupyter notebook" rounded className="image-style1 m-1"></Image> Jupyter Notebook
-                                            </span>
-                                        </li>
-                                    </ul>
-                            </Card.Body>
-                        </Accordion.Collapse>
-                    </Card>
-                    </Accordion>
-                    </div>
-                    <div className="d-flex justify-content-between flex-nowrap text-center sourceCode">
-                        <Button className="" variant="dark" href="https://github.com/manish216/CSE-572-Project-2" >
-                            SOURCE CODE
-                        </Button>
-                    </div>
-                    </div>
-                </VerticalTimelineElement>
-                {/* Project 2 */}
+const TimeLine3 = () => {
+    return (
+        <div id="projects">
+            <VerticalTimeline>
+                {/* Project 1 */}
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: 'transparent', color: '#fff', border: '1px #bfbfbf solid' }}
                     contentArrowStyle={{ borderRight: '7px solid  #fff' }}
-                    date="Fall 2018"
+                    date="Fall 2019"
                     iconStyle={{ background: '#13161B', color: '#fff' }}
                 // icon={<WorkIcon />}
                 >
-                    <h4 className="vertical-timeline-element-title"> Classifiers </h4>
+                    <h4 className="vertical-timeline-element-title">Text recognition for forensic analysis</h4>
                     <div className="d-flex justify-content-between flex-column mt-1">
                         <div style={{ background: '#13161B', color: '#FFF', paddingTop: '10px' }}>
                             <Accordion >
@@ -137,21 +79,25 @@ const TimeLine = () =>{
                         </Accordion.Toggle>
                                     <Accordion.Collapse eventKey="0" className="text-left">
                                         <Card.Body style={{ background: '#13161B' }}>
-                                            <strong>Description:</strong> The goal of this project to implement the Ensemble Learning process on MNIST dataset.
+                                            <strong>Description:</strong>On-going research to reduce the turn around time for forensic teams by analysing the hand written samples at the crime scenes using machine learning models
                                 <ColoredLine color="#fff" />
-                                            <strong>Features:</strong>
+                                            {/* <strong>Data Sources:</strong>
                                             <ul className="list-styles pt-1">
-                                                <li>MNIST Dataset</li>
-                                                <li>USPS Dataset</li>
+                                                <li>Twitter</li>
+                                                <li>CDC</li>
                                             </ul>
-                                            <ColoredLine color="#fff" />
+                                            <ColoredLine color="#fff" /> */}
+                                            <strong>Features:</strong>
+                                            <ul>
+                                                <li>Analyze Handwritting samples</li>
+                                                <li>Visually Explain to the User, why the model made that choice</li>
+                                            </ul>
                                             <strong>Models:</strong>
                                             <ul>
-                                                <li>Logistic Regression using Softmax.</li>
-                                                <li>Dense Neural networks[DNN].</li>
-                                                <li>Convoluted Neural netwotk [CNN].</li>
-                                                <li>Random Forest.</li>
-                                                <li>Support Vector Machine [SVM].</li>
+                                                <li>Feature Learning Network (FLN)   : To extract the features and soft-probabilites from the image files</li>
+                                                <li>Convolution Neural Network (CNN) : To assist Human Examiners in detecting authentic and forged hand written samples</li>
+                                                <li>Probability Graphical Models(PGM): To explain the decision made by CNN </li>
+                                                <li>GradCAM : To visually explain the decision made by CNN</li>
                                             </ul>
                                             <ColoredLine color="#fff" />
                                             <strong>Tech used:</strong>
@@ -163,7 +109,72 @@ const TimeLine = () =>{
                                                 </li>
                                                 <li>
                                                     <span className="p-2">
-                                                        <Image src={L_Tensorflow} alt="TensorFlow" rounded className="image-style1 m-1"></Image> TensorFlow
+                                                        <Image src={L_Keras} alt="Keras" rounded className="image-style1 m-1"></Image> Keras
+                                            </span>
+                                                </li>
+                                                <li>
+                                                    <span className="p-2">
+                                                        <Image src={L_Numpy} alt="NumPy" rounded className="image-style1 m-1"></Image> NumPy
+                                            </span>
+                                                </li>
+                                                <li>
+                                                    <span className="p-2">
+                                                        <Image src={L_colab} alt="Jupyter notebook" rounded className="image-style1 m-1"></Image> Google Colab
+                                            </span>
+                                                </li>
+                                            </ul>
+                                        </Card.Body>
+                                    </Accordion.Collapse>
+                                </Card>
+                            </Accordion>
+                        </div>
+                        <div className="d-flex justify-content-between flex-nowrap text-center sourceCode">
+                            <Button className="" variant="dark" href="https://github.com/manish216/CSE-674-Project3" >
+                                SOURCE CODE
+                            </Button>
+                        </div>
+                    </div>
+                </VerticalTimelineElement>
+                {/* Project 2 */}
+                <VerticalTimelineElement
+                    className="vertical-timeline-element--work"
+                    contentStyle={{ background: 'transparent', color: '#fff', border: '1px #bfbfbf solid' }}
+                    contentArrowStyle={{ borderRight: '7px solid  #fff' }}
+                    date="Fall 2019"
+                    iconStyle={{ background: '#13161B', color: '#fff' }}
+                // icon={<WorkIcon />}
+                >
+                    <h4 className="vertical-timeline-element-title"> Explainable AI </h4>
+                    <div className="d-flex justify-content-between flex-column mt-1">
+                        <div style={{ background: '#13161B', color: '#FFF', paddingTop: '10px' }}>
+                            <Accordion >
+                                <Card>
+                                    <Accordion.Toggle as={Card.Header} style={{ background: '#13161B' }} eventKey="0" className="p-2 text-center accordian-main">
+                                        PROJECT DETAILS
+                        </Accordion.Toggle>
+                                    <Accordion.Collapse eventKey="0" className="text-left">
+                                        <Card.Body style={{ background: '#13161B' }}>
+                                            <strong>Description:</strong> The objective of this project is to develop a machine learning model which can learn the explainable features for a task domain and learn to answer the variety of queries in that domain
+                                <ColoredLine color="#fff" />
+                                            <strong>Features:</strong>
+                                            <ul className="list-styles pt-1">
+                                                <li>Human determined features: The hand written samples are verified by human examiners</li>
+                                                <li>Deep learning features :  Representation of multi-layer artificial neural network which can automatically learn the feature representations from the data provided</li>
+                                            </ul>
+                                            <ColoredLine color="#fff" />
+                                            <strong>Models:</strong>
+                                            <ul>
+                                                <li>Probability Graphical Models (PGM's): To infer the features, to determine weather the images are similar or not</li>
+                                                <li>Siamese network: A twin network that share same weights among them to learn useful features.</li>
+                                                <li>Auto Encoders: Learns the compressed Learning features of the given inputs.</li>
+                                                <li>Convolution Neural Network (CNN): TO classify weather the two images are similar or not</li>
+                                            </ul>
+                                            <ColoredLine color="#fff" />
+                                            <strong>Tech used:</strong>
+                                            <ul>
+                                                <li>
+                                                    <span className="p-2">
+                                                        <Image src={L_PYTHON} alt="Python" rounded className="image-style1 m-1"></Image> Python
                                             </span>
                                                 </li>
                                                 <li>
@@ -173,7 +184,12 @@ const TimeLine = () =>{
                                                 </li>
                                                 <li>
                                                     <span className="p-2">
-                                                        <Image src={L_jupyterNotebook} alt="Jupyter notebook" rounded className="image-style1 m-1"></Image> Jupyter Notebook
+                                                        <Image src={L_Numpy} alt="NumPy" rounded className="image-style1 m-1"></Image> NumPy
+                                            </span>
+                                                </li>
+                                                <li>
+                                                    <span className="p-2">
+                                                        <Image src={L_colab} alt="Jupyter notebook" rounded className="image-style1 m-1"></Image> Google Colab
                                             </span>
                                                 </li>
                                             </ul>
@@ -185,7 +201,7 @@ const TimeLine = () =>{
                         <div className="d-flex justify-content-between flex-nowrap text-center sourceCode">
 
                             {/* <Button variant="dark">SEE LIVE</Button> */}
-                            <Button className="" variant="dark" href="https://github.com/manish216/CSE-572-Project-3" >
+                            <Button className="" variant="dark" href="https://github.com/manish216/CSE-674-Project2" >
                                 SOURCE CODE
                         </Button>
                         </div>
@@ -196,12 +212,11 @@ const TimeLine = () =>{
                     className="vertical-timeline-element--work"
                     contentStyle={{ background: 'transparent', color: '#fff', border: '1px #bfbfbf solid' }}
                     contentArrowStyle={{ borderRight: '7px solid  #fff' }}
-                    date="Fall 2018"
+                    date="Fall 2019"
                     iconStyle={{ background: '#13161B', color: '#fff' }}
                 // icon={<WorkIcon />}
                 >
-                    <h4 className="vertical-timeline-element-title">Morphology transformation, Image Segmentation and
-Point detection, Hough Transformation.</h4>
+                    <h4 className="vertical-timeline-element-title">Covid Tracker Website</h4>
                     <div className="d-flex justify-content-between flex-column mt-1">
                         <div style={{ background: '#13161B', color: '#FFF', paddingTop: '10px' }}>
                             <Accordion >
@@ -211,7 +226,7 @@ Point detection, Hough Transformation.</h4>
                         </Accordion.Toggle>
                                     <Accordion.Collapse eventKey="0" className="text-left">
                                         <Card.Body style={{ background: '#13161B' }}>
-                                            <strong>Description:</strong> The goal of this project is to remove noise, extract boundary, detect porosity of the images.
+                                            <strong>Description:</strong> The objective of the project is to design a user friendly website to track COVID statistics across world
                                             <ColoredLine color="#fff" />
                                             {/* <strong>Features:</strong>
                                             <ul className="list-styles pt-1">
@@ -219,35 +234,39 @@ Point detection, Hough Transformation.</h4>
                                                 <li>GSC features: Features extracted using Gradient Structural Concavity (GSC) algorithm.</li>
                                             </ul> */}
                                             {/* <ColoredLine color="#fff" /> */}
-                                            <strong>Algorithms:</strong>
+                                            <strong>Features:</strong>
                                             <ul>
-                                                <li>Morphology image processing algorithm</li>
-                                                <li>Image Segmentation and Point detection</li>
-                                                <li>Hough transform</li>
+                                                <li>Visualize Covid Trend</li>
+                                                <li>Weekly Average</li>
                                             </ul>
                                             <ColoredLine color="#fff" />
                                             <strong>Tech used:</strong>
                                             <ul>
                                                 <li>
                                                     <span className="p-2">
-                                                        <Image src={L_PYTHON} alt="Python" rounded className="image-style1 m-1"></Image> Python
+                                                        <Image src={L_REACT} alt="React" rounded className="image-style1 m-1"></Image> React
                                                     </span>
                                                 </li>
                                                 <li>
                                                     <span className="p-2">
-                                                        <Image src={L_Numpy} alt="NumPy" rounded className="image-style1 m-1"></Image> NumPy
+                                                        <Image src={L_Flask} alt="Flask" rounded className="image-style1 m-1"></Image> Flask
                                                     </span>
                                                 </li>
                                                 <li>
                                                     <span className="p-2">
-                                                        <Image src={L_matplotlib} alt="Matplotlib" rounded className="image-style1 m-1"></Image> MatplotLib
+                                                        <Image src={L_HTML5} alt="Matplotlib" rounded className="image-style1 m-1"></Image> HTML5
+                                                    </span>
+                                                </li>
+                                                {/* <li>
+                                                    <span className="p-2">
+                                                        <Image src={L_sqlLite} alt="SQLite" rounded className="image-style1 m-1"></Image> SQLite
                                                     </span>
                                                 </li>
                                                 <li>
                                                     <span className="p-2">
-                                                        <Image src={L_jupyterNotebook} alt="Jupyter notebook" rounded className="image-style1 m-1"></Image> Jupyter Notebook
+                                                        <Image src={L_gMap} alt="Google Map API" rounded className="image-style1 m-1"></Image> Google Map API
                                                     </span>
-                                                </li>
+                                                </li> */}
                                             </ul>
                                         </Card.Body>
                                     </Accordion.Collapse>
@@ -256,15 +275,15 @@ Point detection, Hough Transformation.</h4>
                         </div>
                         <div className="d-flex justify-content-between flex-nowrap text-center sourceCode">
                             {/* <Button variant="dark">SEE LIVE</Button> */}
-                            <Button className="" variant="dark" href="https://github.com/manish216/CSE-573-Project3" >
+                            <Button className="" variant="dark" href="https://github.com/manish216/Covid_Tracker" >
                                 SOURCE CODE
                         </Button>
                         </div>
                     </div>
                 </VerticalTimelineElement>
-    </VerticalTimeline>
-    </div>
+            </VerticalTimeline>
+        </div>
     );
 };
 
-export default TimeLine;
+export default TimeLine3;
