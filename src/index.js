@@ -5,13 +5,14 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import  {HashRouter,BrowserRouter,Route, Link} from 'react-router-dom';
-
+import  ScrollToTop  from './components/scrollTop/scrollTop.component';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
 ReactDOM.render(
   <BrowserRouter>
+
     <App />
   </BrowserRouter>,
   document.getElementById('root')

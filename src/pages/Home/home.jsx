@@ -49,7 +49,7 @@ class Home extends Component {
                 </div>
                 <div className={styles.About_me}>
                     <Delayed waitBeforeShow={5300}>
-                    <MyCarousal1 />
+                    {/* <MyCarousal1 /> */}
                     </Delayed>
                     <div className={styles.about_content}>
                         <Delayed waitBeforeShow={5400}>
