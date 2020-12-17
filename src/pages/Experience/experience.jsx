@@ -72,6 +72,7 @@ const ColoredLine = ({ color }) => (
 class Experience extends Component {
     render() {
         return (
+            window.scrollTo(0, 0);
             <div className={styles.body}>
 
                 <div className={styles.test}>
