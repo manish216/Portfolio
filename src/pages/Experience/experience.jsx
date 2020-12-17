@@ -101,7 +101,7 @@ class Experience extends Component {
                         </Accordion.Toggle>
                             <Accordion.Collapse eventKey="0" className="text-left">
                                 <Card.Body style={{ background: '#13161B' }}>
-                                    <strong>Description:</strong> Developed an application to track unrest in specific country
+                                        <strong>Description:</strong>  Peloria Employs artificial intelligence and social science methodologies to monitor online language using a wide-range of other data sources. It does this to develop Early Warning/Early Action prediction of change in poverty, violence,supply-chain disruption, human displacement,ecological change and other societal phenomena
                                 <ColoredLine color="#fff" />
                                     {/* <strong>Data Sources:</strong>
                                             <ul className="list-styles pt-1">
@@ -111,9 +111,19 @@ class Experience extends Component {
                                             <ColoredLine color="#fff" /> */}
                                     <strong>Features:</strong>
                                     <ul>
-                                        <li>Analyze Handwritting samples</li>
-                                        <li>Build machine learning model’s to predict the social unrest in Kenya</li>
-
+                                            <li>The final product is a user interface with a multi-faceted data console, which can be used to track the social unrest and identify the key causal indicators behind the unrest</li>
+                                            <li>Developed Sentiment ranking algorithm to create a common dataset for the web development team to visualize the twitter sentiment analysis to the end-users</li>
+                                            <li>Developed web APIs to extract data from different sources and ingest them into Amazon RDS</li>
+                                            <li>Designed functionalities for application development that includes front-end, back-end based on business requirements</li>
+                                            <li>Implementation discretization and binding,data wrangling: cleaning,transformation,merging and reshaping data frames</li>
+                                            <li>Integrated applications with designing database architecture and server scripting</li>
+                                            <li>Developed a python script in AWS lambda to process the files (twitter tweets and other business related data) coming to the S3
+                                            service and inserted the processed files into RDS</li>
+                                            <li>Developed a python based API (RESTful Web service) to communicate between different services in the Application</li>
+                                            <li>Developed a custom Geographical Map interface using GeoJSON file to plot the social unrest level in specific region</li>
+                                            <li>Deployed a web application in Amazon EC2 and maintained the traffic to the application by using the ALB(Load Balan</li>
+                                            <li>Assisted the team to publish the web application to clients using Route 53</li>
+                                            <li>Developed and Designed graphs using HTML, CSS and Java Script</li>
                                     </ul>
                                     <ColoredLine color="#fff" />
                                     <strong>Tech used:</strong>
